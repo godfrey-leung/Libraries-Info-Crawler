@@ -76,8 +76,8 @@ sc.States_Crawing(1)
 #third-party lib
 from bs4 import BeautifulSoup
 from six import iteritems
-from pprint import pprint
-import pdb, traceback, sys
+#from pprint import pprint
+#import pdb, traceback, sys
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
