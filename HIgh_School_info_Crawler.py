@@ -582,8 +582,6 @@ class SchoolCrawler(object):
         public_sheet.write(0, 2, 'Phone')
         public_sheet.write(0, 3, 'School Website')
         public_sheet.write(0, 4, 'Link')
-            
-        print(type(public_sheet))
         
         
         state_path = '/'+state_name
