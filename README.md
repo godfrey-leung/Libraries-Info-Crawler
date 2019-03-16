@@ -5,11 +5,13 @@ https://www.privateschoolreview.com</br>
 https://www.publicschoolreview.com</br>
 
 ## Required Libs
+```
 selenium (version 3.14.0 is required)
 BeautifulSoup
 six
 xlsxwriter
 urllib
+```
 
 ## Syntax Example
 
