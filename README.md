@@ -4,6 +4,38 @@ This script is the legacy code in schools' project and it crawls the school data
 https://www.privateschoolreview.com</br>  
 https://www.publicschoolreview.com</br>
 
+## Required Libs
+selenium (version 3.14.0 is required)
+BeautifulSoup
+six
+xlsxwriter
+urllib
+
+## Syntax Example
+
+If you want to import to your own python file, just prepare a new blan python file under same file path and ...
+```
+import HIgh_School_info_Crawler as hsic
+```
+
+The file path for text file contains states name</br>
+If you do not have idea about the format of this file, please take a look file named 'states_list.txt' in Github link</br>
+
+```
+file_path = './states_list.txt'
+```
+
+intial the instance</br>
+```
+sc = hsic.SchoolCrawler(file_path)
+```
+
+call crawlong function</br>
+```
+sc.States_Crawing(1)
+```
+
+
 
 
 ## Index Form
@@ -59,30 +91,6 @@ Washington - 47
 West-Virginia -48
 Wisconsin - 49
 Wyoming - 50
-```
-
-## Syntax Example
-
-If you want to import to your own python file, just prepare a new blan python file under same file path and ...
-```
-import HIgh_School_info_Crawler as hsic
-```
-
-The file path for text file contains states name</br>
-If you do not have idea about the format of this file, please take a look file named 'states_list.txt' in Github link</br>
-
-```
-file_path = './states_list.txt'
-```
-
-intial the instance</br>
-```
-sc = hsic.SchoolCrawler(file_path)
-```
-
-call crawlong function</br>
-```
-sc.States_Crawing(1)
 ```
 
 ## Authors
