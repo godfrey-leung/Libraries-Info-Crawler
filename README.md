@@ -1,12 +1,12 @@
 # High-School-Info-Crawler
-This python script crawls the school data from website: 
+This script is the legacy code in schools' project and it crawls the school data from website: 
 
 https://www.privateschoolreview.com</br>  
 https://www.publicschoolreview.com</br>
 
 
 
-## The number will determine which state data you want to gather. 
+## Index Form
 ```
 Alabama - 0
 Alaska - 1
@@ -84,3 +84,6 @@ call crawlong function</br>
 ```
 sc.States_Crawing(1)
 ```
+
+## Authors
+FantasticApple</br>
