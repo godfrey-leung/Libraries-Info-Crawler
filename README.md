@@ -1,8 +1,8 @@
-# High-School-Info-Crawler
-This script is the legacy code in schools' project and it crawls the school data from website: 
+# Library-Contact-Info-Crawler
+This script is the legacy code modified from zhawhjw/High-School-Info-Crawler and it crawls the library contact info data from website: 
 
-https://www.privateschoolreview.com</br>  
-https://www.publicschoolreview.com</br>
+Examples of websites to crawl from:
+(India public libraries) http://nmlindia.nic.in/libraryregistrations/librarylist?fbclid=IwAR0CkQEELLzkm4Kc_QA_PYLNO7noJGVp52R-kdYcVZO94_h8e8KmTD9j4fo
 
 ## Required Libs
 ```
