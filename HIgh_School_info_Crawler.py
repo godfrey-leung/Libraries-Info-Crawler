@@ -6,65 +6,50 @@ Syntax Example:
 
 #The file path for text file contains states name
 #If you do not have idea about the format of this file, please take a look file named 'states_list.txt' in Github link
-file_path = './states_list.txt'
+file_path = './India_states_list.txt'
 
 #intial the instance
-sc = SchoolCrawler(file_path)
+sc = LibraryCrawler(file_path)
 
 #call crawlong function
 #the number will determine which state data you want to gather.
 
-Alabama - 0
-Alaska - 1
-Arizona - 2
-Arkansas - 3
-California - 4
-Colorado - 5
-Connecticut - 6
-Delaware - 7
-District-of-Columbia - 8
-Florida - 9
-Georgia - 10
-Hawaii - 11
-Idaho - 12
-Illinois - 13
-Indiana - 14
-Iowa - 15
-Kansas - 16
-Kentucky - 17
-Louisiana - 18
-Maine - 19
-Maryland - 20
-Massachusetts - 21
-Michigan - 22
-Minnesota - 23
-Mississippi - 24
-Missouri - 25
-Montana - 26
-Nebraska - 27
-Nevada - 28
-New-Hampshire - 29
-New-Jersey - 30
-New-Mexico - 31
-New-York - 32
-North-Carolina -33
-North-Dakota - 34
-Ohio - 35
-Oklahoma - 36
-Oregon - 37
-Pennsylvania - 38
-Rhode-Island - 39
-South-Carolina - 40
-South-Dakota - 41
-Tennessee - 42
-Texas - 43
-Utah - 44
-Vermont - 45
-Virginia - 46
-Washington - 47
-West-Virginia -48
-Wisconsin - 49
-Wyoming - 50
+Andhra Pradesh - 0
+Arunachal Pradesh - 1
+Assam - 2
+Bihar - 3
+Chhattisgarh - 4
+Goa - 5
+Gujarat - 6
+Haryana - 7
+Himachal Pradesh - 8
+Jammu & Kashmir - 9
+Jharkhand - 10
+Karnataka - 11
+Kerala - 12
+Madhya Pradesh - 13
+Maharashtra - 14
+Manipur - 15
+Meghalaya - 16
+Mizoram - 17
+Nagaland - 18
+Odisha - 19
+Punjab - 20
+Rajasthan - 21
+Sikkim - 22
+Tamil Nadu - 23
+Telangana - 24
+Tripura - 25
+Uttar Pradesh - 26
+Uttarakhand - 27
+West Bengal - 28
+Andaman and Nicobar Islands - 29
+Chandigarh - 30
+Dadra and Nagar Haveli - 31
+Daman & Diu - 32
+Lakshadweep - 33
+Puducherry
+The Government of NCT of Delhi
 
 sc.States_Crawing(1)
 
@@ -96,10 +81,10 @@ import xlsxwriter
 # In[30]:
 
 
-class SchoolCrawler(object):
+class LibraryCrawler(object):
 
     '''
-    Initilization
+    Initialisation
 
     file_path: string
         The file path of states list file. The format should be one state per line in 'txt' format.
@@ -133,8 +118,9 @@ class SchoolCrawler(object):
         self.web_drive_wait_time = web_drive_wait_time
 
         '''root_path should not be eaditable in public scale'''
-        self.root_path_private = 'https://www.privateschoolreview.com'
-        self.root_path_public = 'https://www.publicschoolreview.com'
+        #self.root_path_private = 'https://www.privateschoolreview.com'
+        #self.root_path_public = 'https://www.publicschoolreview.com'
+        self.root_path_public = 'http://nmlindia.nic.in/libraryregistrations/librarylist?fbclid=IwAR0CkQEELLzkm4Kc_QA_PYLNO7noJGVp52R-kdYcVZO94_h8e8KmTD9j4fo'
 
     '''
     To read states list file into memory. It will be called by other functions.
